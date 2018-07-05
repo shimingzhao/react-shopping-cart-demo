@@ -1,0 +1,141 @@
+// =============================================================================
+// IMPORT VARIABLES
+// =============================================================================
+
+@import "config/variables";
+
+
+/* =============================================================================
+  BOX SIZING
+============================================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* =============================================================================
+  HTML & BODY
+============================================================================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+// body {
+//   color: $color--neutral;
+//   background-color: #fff;
+//   font-family: $font-family--primary;
+//   font-size: $font-size--small;
+//   line-height: $line-height--medium;
+// }
+
+/* =============================================================================
+  HEADINGS
+============================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color--neutral-dark;
+  font-weight: 500;
+  line-height: $line-height--small;
+}
+
+/* =============================================================================
+  LINKS
+============================================================================= */
+
+a {
+  color: $color--theme;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color--theme-dark;
+}
+
+a.footer:link {
+  color: white;
+  text-decoration: none;
+}
+
+a.footer:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a.footer:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a.footer:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* =============================================================================
+  TEXT STUFFS
+============================================================================= */
+
+b,
+strong {
+  font-weight: 500;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+/* =============================================================================
+  EMBEDDED CONTENT
+============================================================================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =============================================================================
+  PRIMARY LAYOUT STUFF
+============================================================================= */
+
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 960px;
+}
+
+@media all and ( min-width: $breakpoint--small ) {
+
+  .container {
+    padding: 0 24px;
+  }
+
+}
+
+@media all and ( min-width: $breakpoint--medium ) {
+
+  .container {
+    padding: 0 48px;
+  }
+
+}
+
+
+@media all and ( max-width: 660px ) {
+
+  #carbonads {
+    display: none;
+  }
+
+}

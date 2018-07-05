@@ -1,0 +1,18 @@
+// Font weights
+$light: 100;
+$regular: 500;
+$bold: 500;
+
+// Base Font
+$base-font-family: Titillium Web;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: Titillium Web;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;

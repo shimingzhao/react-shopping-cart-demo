@@ -1,0 +1,37 @@
+// const styles = {
+//
+//   container: {
+//     textAlign: 'left'
+//     //paddingTop: 200,
+//   },
+//
+//   toolBarTitle: {
+//     fontFamily: 'Titillium Web',
+//     fontWeight: 12
+//   },
+//   inputStyle:{
+//     fontFamily: 'Titillium Web',
+//     width: '100%'
+//   },
+//   selectFieldFont: {
+//     fontFamily: 'Titillium Web',
+//     width: '100%'
+//   },
+//   inputSubTextStyle:{
+//     fontFamily: 'Titillium Web',
+//     //width: '100%',
+//     fontSize: '10'
+//   },
+//   inputStyle2:{
+//     fontFamily: 'Titillium Web',
+//     width: '100%'
+//     //paddingRight: -50,
+//
+//   }
+// };
+
+@import 'mygrid';
+
+.shipments .toolBarTitle{
+  font-weight: 12px;
+}

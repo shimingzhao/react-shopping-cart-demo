@@ -1,0 +1,30 @@
+
+
+
+
+.layout {
+    img {
+        display: block;
+        max-width: 372px;
+        max-height: 372px;
+        height: auto;
+        width: auto;
+    }
+    background-color: 'red';
+}
+
+.layout2 {
+
+    background-color: 'red';
+    font-size: 66px;
+}
+
+.layout2 .past {
+    font-size: 14px;
+    color: green;
+}
+
+.card {
+    width: 370px;
+    height: 550px;
+}

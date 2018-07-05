@@ -1,0 +1,23 @@
+
+
+.header {
+
+
+  padding: 20px;
+  background-color: #110004;
+  width: 95%;
+  font-weight: $header-font-weight;
+
+
+  &.both {
+    @include center;
+  }
+
+  &.horizontal {
+    @include center(true, false);
+  }
+
+  &.vertical {
+    @include center(false, true);
+  }
+}

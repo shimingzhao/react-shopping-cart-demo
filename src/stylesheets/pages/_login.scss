@@ -1,0 +1,21 @@
+.login {
+
+  padding: 1px;
+  background-color: #783344;
+  width: 80%;
+  height: 80%;
+  //padding-left: 170px;
+
+
+  &.both {
+    @include center;
+  }
+
+  &.horizontal {
+    @include center(true, false);
+  }
+
+  &.vertical {
+    @include center(false, true);
+  }
+}

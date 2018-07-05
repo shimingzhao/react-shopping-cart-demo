@@ -1,0 +1,696 @@
+{
+  "movie": {
+    "title": ["Jurassic Park"],
+    "desc": ["Lots of dinos!"],
+    "stars": ["${ stars } out of 5"]
+  },
+  "greeting": [
+    "Hello",
+    "Bonjour",
+    "Hola"
+  ],
+  "farwell": [
+    "Goodbye",
+    "Au revoir",
+    "Adiós"
+  ],
+
+
+
+
+  "global":{
+
+    "buttons":{
+
+      "submit":[
+        "submit",
+        "soumettre",
+        "hola"
+      ],
+      "clear":[
+        "clear",
+        "efacer",
+        "hola"
+      ]
+
+    }
+
+
+  },
+
+  "header":{
+
+    "home":[
+      "shipments",
+      "livraisons",
+      "hola"
+    ],
+    "about":[
+      "about",
+      "a propos",
+      "hola"
+    ],
+    "shipments":[
+      "shipments",
+      "livraisons",
+      "hola"
+    ],
+    "login":[
+      "login",
+      "se connecter",
+      "hola"
+    ],
+    "logout":[
+      "logout",
+      "deconnection",
+      "hola"
+    ]
+
+  },
+
+
+  "login":{
+
+    "title":[
+      "Authentication",
+      "Authentification",
+      "hola"
+    ],
+
+    "form":{
+      "username":[
+        "username",
+        "nom d'utilisateur",
+        "hola"
+      ],
+      "password":[
+        "password",
+        "mot de passe",
+        "hola"
+      ]
+    },
+
+    "buttons":{
+      "login":[
+        "Login",
+        "Se Connecter",
+        "hola"
+      ]
+    },
+
+
+
+    "authresult":{
+      "review":[
+        "Please review the following:",
+        "Veuillez revizer les éléments suivants:",
+        "hola"
+      ],
+      "result":[
+        "Authentication failure",
+        "Échec d'authentification",
+        "hola"
+      ]
+    }
+  },
+
+  "wizard_page4":{
+
+    "buttons":{
+      "ship":[
+        "Ship",
+        "Envoyer",
+        "hola"
+      ],
+      "previous":[
+        "Previous",
+        "Précédent",
+        "hola"
+      ]
+
+    },
+
+    "form_submit_fail":{
+      "title":[
+        "Server returned error(s)",
+        "Le serveur a renvoyé erreur(s)",
+        "hola"
+      ]
+    },
+
+
+    "form_invalid":{
+
+      "title":[
+        "Form is invalid",
+        "Le formulaire n'est pas valide",
+        "hola"
+      ],
+
+      "review":[
+        "Please review your form, some data is invalid",
+        "Veuillez consulter vos données, certaines données sont invalides",
+        "hola"
+      ]
+
+    }
+
+  },
+
+
+  "home":{
+
+    "title": [
+      "Home page",
+      "Page maison",
+      "Hola"
+    ]
+  },
+
+
+  "validators":{
+
+    "required": [
+      "required",
+      "Champ obligatoire",
+      "Hola"
+    ]
+
+  },
+
+  "shipments":{
+
+    "title": [
+      "Shipments page",
+      "Page livraisons",
+      "Hola"
+    ],
+
+    "mygrid":{
+
+      "list": [
+        "list",
+        "liste",
+        "Hola"
+      ],
+
+      "details": [
+        "details",
+        "détails",
+        "Hola"
+      ],
+
+      "pager":{
+
+        "page": [
+          "page",
+          "page",
+          "Hola"
+        ],
+        "items": [
+          "items",
+          "articles",
+          "Hola"
+        ],
+        "of": [
+          "of",
+          "de",
+          "Hola"
+        ]
+
+
+
+      },
+
+      "search": [
+        "search",
+        "rechercher",
+        "Hola"
+      ],
+
+      "buttons":{
+
+        "new": [
+          "new shipment",
+          "nouvelle expédition",
+          "Hola"
+        ],
+        "void": [
+          "void shipment",
+          "anuller expédition ",
+          "Hola"
+        ]
+
+      },
+
+
+      "header":{
+
+        "carrier_name": [
+          "carrier",
+          "transporteur",
+          "Hola"
+        ],
+
+        "carrier_service": [
+          "carrier service",
+          "le service du transporteur",
+          "Hola"
+        ],
+
+        "shipment_identification": [
+          "shipment id",
+          "id livraison",
+          "Hola"
+        ],
+        "tracking_code": [
+          "tracking code",
+          "code de suivi",
+          "Hola"
+        ],
+        "last_status": [
+          "status",
+          "statut",
+          "Hola"
+        ],
+        "group_code": [
+          "group code",
+          "code de groupe",
+          "Hola"
+        ],
+        "created_date": [
+          "created date",
+          "date créée",
+          "Hola"
+        ]
+      },
+
+      "page":[]
+
+    }
+
+  },
+
+  "newshipment":{
+
+    "shipfrom_shipto":[
+      "ship From/ship To",
+      "envoyer de/envoyer a",
+      "Hola"
+    ],
+    "services_options":[
+      "Services and Options",
+      "Services et options",
+      "Hola"
+    ],
+    "delivery_items":[
+      "delivery items",
+      "articles de livraison",
+      "Hola"
+    ],
+    "confirm":[
+      "confirm",
+      "confirmer",
+      "Hola"
+    ],
+
+    "confirm_title":[
+      "Verify your delivery, Ship when ready",
+      "Vérifiez votre livraison, Envoyer quand il est prêt",
+      "hola"
+    ],
+
+
+    "next": [
+      "Next",
+      "Prochain",
+      "Hola"
+    ],
+
+    "previous": [
+      "Previous",
+      "Précédent",
+      "Hola"
+    ],
+
+    "shipfrom":{
+
+      "title": [
+        "Ship From",
+        "Envoyer de",
+        "Hola"
+      ],
+      "name": [
+        "name",
+        "nom",
+        "Hola"
+      ],
+      "company": [
+        "company",
+        "compagnie",
+        "Hola"
+      ],
+      "phone": [
+        "phone",
+        "téléphone",
+        "Hola"
+      ],
+      "address1": [
+        "address",
+        "adresse",
+        "Hola"
+      ],
+      "address2": [
+        "address",
+        "adresse",
+        "Hola"
+      ],
+      "city": [
+        "city",
+        "ville",
+        "Hola"
+      ],
+      "postalzip": [
+        "Postal Code/Zip",
+        "Code Postale/ZIP",
+        "Hola"
+      ],
+      "email": [
+        "email",
+        "email",
+        "Hola"
+      ],
+      "country": [
+        "country",
+        "pays",
+        "Hola"
+      ]
+
+
+    },
+
+    "shipto":{
+
+      "title": [
+        "Ship To",
+        "Envoyer a",
+        "Hola"
+      ],
+      "name": [
+        "name",
+        "nom",
+        "Hola"
+      ],
+      "company": [
+        "company",
+        "compagnie",
+        "Hola"
+      ],
+      "phone": [
+        "phone",
+        "téléphone",
+        "Hola"
+      ],
+      "address1": [
+        "address",
+        "adresse",
+        "Hola"
+      ],
+      "address2": [
+        "address",
+        "adresse",
+        "Hola"
+      ],
+      "city": [
+        "city",
+        "ville",
+        "Hola"
+      ],
+      "postalzip": [
+        "Postal Code/Zip",
+        "Code Postale/ZIP",
+        "Hola"
+      ],
+      "email": [
+        "email",
+        "email",
+        "Hola"
+      ],
+      "country": [
+        "country",
+        "pays",
+        "Hola"
+      ]
+
+
+    },
+
+    "wizard_page2":{
+
+      "or":[
+        "or",
+        "ou",
+        "hola"
+      ],
+
+      "save_defaults":[
+        "save defaults",
+        "enregistrer défauts",
+        "hola"
+      ],
+
+      "load_defaults":[
+        "load defaults",
+        "charger défauts",
+        "hola"
+      ],
+
+      "select_carrier":[
+        "Select carrier",
+        "Sélectionnez le transporteur",
+        "hola"
+      ],
+
+      "select_carrier_service":[
+        "Select carrier service",
+        "Sélectionnez le service de transport",
+        "hola"
+      ],
+
+      "select_carrier_service_option":[
+        "Select service option",
+        "Les options du service",
+        "hola"
+      ],
+
+      "carrier_service": [
+        "Carrier, Service and Service Options",
+        "Options du transporteur et du service",
+        "Hola"
+      ],
+
+      "carrier_service_option": [
+        "Carrier Package and Delivery Options",
+        "Les options de livraison du carrier",
+        "Hola"
+      ],
+
+      "postcanada_options": {
+
+        "on_shipment": [
+          "on-shipment",
+          "sur-expédition",
+          "hola"
+        ],
+
+        "on_exception": [
+          "on-exception",
+          "sur-exception",
+          "hola"
+        ],
+
+        "on_delivery": [
+          "on-delivery",
+          "sur-livraison",
+          "hola"
+        ],
+
+        "select_encoding":[
+          "Select encoding",
+          "Sélectionner le codage",
+          "hola"
+        ],
+
+        "notification": [
+          "Notifications",
+          "Notifications",
+          "Hola"
+        ],
+
+        "print_preferences": [
+          "Print Prefernces",
+          "Préférences d'impression",
+          "Hola"
+        ],
+        "parcel_characteristics": [
+          "Parcel Characteristics",
+          "Caractéristiques du colis",
+          "Hola"
+        ],
+        "delivery_options":[
+          "Delivery Options",
+          "Options de livraison",
+          "hola"
+        ],
+        "generateReturnLabel":[
+          "Generate Return Label",
+          "Générer l'étiquette de retour",
+          "hola"
+        ]
+
+
+      }
+
+    },
+
+    "wizard_page3":{
+
+      "items":[
+        "items",
+        "articles",
+        "hola"
+      ],
+
+      "add_box": [
+        "add box",
+        "ajouter une boîte",
+        "Hola"
+      ],
+
+      "remove_box": [
+        "remove box",
+        "enlever la boîte",
+        "Hola"
+      ],
+
+      "add_sku": [
+        "add sku",
+        "ajouter une sku",
+        "Hola"
+      ],
+
+      "fetch_sku": [
+        "fetch sku",
+        "chercher sku",
+        "hola"
+      ],
+
+
+      "weight": [
+        "weight",
+        "poids",
+        "holae"
+      ],
+      "length": [
+        "length",
+        "longueur",
+        "holae"
+      ],
+      "width": [
+        "width",
+        "largeur",
+        "holae"
+      ],
+      "height": [
+        "height",
+        "la taille",
+        "holae"
+      ],
+      "tracking": [
+        "tracking#",
+        "#suivi",
+        "holae"
+      ],
+      "dimensions": [
+        "dimensions",
+        "dimensions",
+        "holae"
+      ],
+      "box_category": [
+        "box dimensions",
+        "taille de boite",
+        "holae"
+      ],
+
+
+      "unit_weight": [
+        "unit weight",
+        "poids d'un unité",
+        "holae"
+      ],
+      "value_per_unit": [
+        "value per unit",
+        "valeur par unité",
+        "holae"
+      ],
+      "number_of_units": [
+        "# of units",
+        "# des unités",
+        "holae"
+      ],
+      "tarrif_code":[
+        "tariff code",
+        "code tarif",
+        "hola"
+      ],
+
+      "total_delivery_items":[
+        "total delivery items",
+        "total des articles de livraison",
+        "hola"
+      ],
+
+      "total_weight":[
+        "total weight",
+        "poids total",
+        "hola"
+      ],
+
+      "total_value":[
+        "total value",
+        "valeur totale",
+        "hola"
+      ],
+
+      "coverage":[
+        "$ coverage",
+        "$ couverture",
+        "hola"
+      ],
+
+      "quantity":[
+        "quantity",
+        "quantité",
+        "hola"
+      ]
+
+
+
+
+
+    },
+
+    "options":{
+      "carriersevices":[],
+      "fedexoptions":[],
+      "postcanadaoptions":[],
+      "upsoptions":[],
+      "shipstationoptions":[]
+
+    },
+
+    "deliveryboxes":[]
+
+  }
+
+}

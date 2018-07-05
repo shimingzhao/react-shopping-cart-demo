@@ -1,0 +1,44 @@
+
+.center-container {
+  background: white;
+  padding: 5px;
+  width: 95%;
+  height: 80%;
+  margin-top: 20px;
+  background-color: grey;
+  //height: 50%;
+  //margin-top: 150px;
+  //padding-top: 100px;
+
+  &.both {
+    @include center;
+  }
+
+  &.horizontal {
+    @include center(true, false);
+  }
+
+  &.vertical {
+    @include center(false, true);
+  }
+}
+
+.center-content {
+
+  padding: 5px;
+  background-color: #523233;
+  width: 95%;
+  height: 93%;
+
+  &.both {
+    @include center;
+  }
+
+  &.horizontal {
+    @include center(true, false);
+  }
+
+  &.vertical {
+    @include center(false, true);
+  }
+}

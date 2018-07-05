@@ -1,0 +1,48 @@
+// const styles = {
+//   footerContent: {
+//     float: 'right',
+//     fontFamily: 'Titillium Web'
+//   },
+//   footerContent2: {
+//     float: 'right',
+//     fontFamily: 'Titillium Web',
+//     paddingTop: 15
+//   },
+//
+//   footerText: {
+//     paddingTop: -186,
+//     marginTop: -50
+//   },
+//   textFont: {
+//     fontFamily: 'Titillium Web'
+//   }
+// };
+
+.pager .footerContent{
+  float: right;
+}
+
+.pager .footerContent3{
+  float: right;
+  ///margin-top: -50px;
+  //padding-top: 50px;
+  //color: red;
+}
+
+// .pager .footerContent3 .te{
+//   color: red;
+// }
+
+.pager .footerContent2{
+  float: right;
+  //padding-top: 15px;
+}
+
+.pager .footerText{
+  //padding-top: -186px;
+  //margin-top: -50px;
+}
+
+.pager .textFont{
+  font-family: Titillium Web
+}

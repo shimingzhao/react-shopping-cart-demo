@@ -1,0 +1,45 @@
+.newshipment {
+
+  padding: 1px;
+  background-color: #783311;
+  width: 95%;
+  height: 95%;
+  margin-top: 30px;
+  //padding-left: 170px;
+
+
+  &.both {
+    @include center;
+  }
+
+  &.horizontal {
+    @include center(true, false);
+  }
+
+  &.vertical {
+    @include center(false, true);
+  }
+}
+
+.shipfromshipto {
+
+  padding: 5px;
+  background-color: #780000;
+  width: 95%;
+  height: 95%;
+  margin-top: 15px;
+  //padding-left: 170px;
+
+
+  &.both {
+    @include center;
+  }
+
+  &.horizontal {
+    @include center(true, false);
+  }
+
+  &.vertical {
+    @include center(false, true);
+  }
+}

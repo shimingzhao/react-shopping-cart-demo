@@ -1,0 +1,23 @@
+
+@import 'pager';
+
+.mygrid{
+
+}
+
+.mygrid .f{
+  cursor: pointer;
+}
+
+.mygrid .sortIcon{
+  cursor: pointer;
+}
+
+.mygrid .f .sortIcon180 .sortIconBack{
+  cursor: pointer;
+}
+
+.mygrid .rowAlign{
+  display: flex;
+  align-items: center;
+}

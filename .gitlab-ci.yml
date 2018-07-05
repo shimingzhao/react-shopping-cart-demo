@@ -1,0 +1,73 @@
+
+image: node:6
+
+before_script:
+  # Install ssh-agent if not already installed, it is required by Docker.
+  # (change apt-get to yum if you use a CentOS-based image)
+  #- apt-get install -y ssh-agent
+  - apt-get update
+  - apt-get install -y rsync
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+
+
+  # Run ssh-agent (inside the build environment)
+  - eval $(ssh-agent -s)
+
+  # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+
+  # For Docker builds disable host key checking. Be aware that by adding that
+  # you are suspectible to man-in-the-middle attacks.
+  # WARNING: Use this only with the Docker executor, if you use it with shell
+  # you will overwrite your user's SSH config.
+
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+  - npm install
+
+  # In order to properly check the server's host key, assuming you created the
+  # SSH_SERVER_HOSTKEYS variable previously, uncomment the following two lines
+  # instead.
+  # - mkdir -p ~/.ssh
+  # - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
+
+stages:
+  - test
+  - deploy
+
+
+test:
+  stage: test
+  script:
+  - echo "Running tests"
+  - echo "Here will be frontend tests..."
+  - npm install
+  - npm run build
+
+
+
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "Deploy to staging server"
+    #- apt-get install -y curl
+    #- apt-get install -y rsync
+    #- apt-get install -y openssh-client
+    # - pwd
+    - ssh m_hartvick@104.154.226.117 # "cd /var/www/html" # connect to remote build/staging server, remove cache directory
+    - npm install
+    - npm run build
+    - rsync --rsync-path='/usr/bin/sudo /usr/bin/rsync'  --no-p --no-g --chmod=ugo=rwX -av /builds/dimaash/interim-gateway-frontend/build/ m_hartvick@104.154.226.117:/var/www/html/interim-gateway-backend/static # copy current build over to build/staging server
+    - ssh m_hartvick@104.154.226.117 "
+            cd /var/www/html/interim-gateway-backend &&
+            sudo sed -i 's#index.js#static/index.js#g' static/index.html &&
+            sudo setfacl -R -m u:mdevinterim:rX /var/www/html/interim-gateway-backend/static &&
+            sudo setfacl -R -m u:mdevinterim:rwX /var/www/html/interim-gateway-backend/static &&
+            sudo setfacl -dR -m u:mdevinterim:rwX /var/www/html/interim-gateway-backend/static &&
+            sudo chown -R mdevinterim:www-data /var/www/html/interim-gateway-backend/static &&
+            python3 manage.py woot --text='DONE INSTALLING REQUIREMENTS, BUILDING, DEPLOYING...'
+        "
+  environment:
+    name: staging
+    
